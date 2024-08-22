@@ -5,6 +5,8 @@ janela  = tk.Tk()
 janela.title("janela teste")
 
 janela.geometry("400x300") #largura x altura
+
+
 # texto na janela
 
 label = tk.Label(janela,text='janela simples' )
