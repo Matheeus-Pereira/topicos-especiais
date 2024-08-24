@@ -16,25 +16,27 @@ def calcular_juros():
         messagebox.showwarning("Entrada inválida", "Por favor, insira valores numéricos válidos.")
 
 
+def escrever(x:str):
+ label = tk.Label(janela, text=x)
+ label.pack(pady=(15,0))
+
+
 janela = tk.Tk()
 janela.title("Calculadora de Juros Simples")
 janela.geometry("400x300")
 
 # valor inicial
-label = tk.Label(janela, text='Valor inicial:')
-label.pack(pady=(15, 0))
+escrever("valor inicial")
 valorini = tk.Entry(janela, width=30)
 valorini.pack(pady=0)
 
 #  juros anual
-label = tk.Label(janela, text='Taxa de juros anual (%):')
-label.pack(pady=(15, 0))
+escrever("Taxa de juros anual (%):")
 jurosano = tk.Entry(janela, width=30)
 jurosano.pack(pady=0)
 
 #  tempo em anos
-label = tk.Label(janela, text='Anos passados:')
-label.pack(pady=(15, 0))
+escrever('Anos passados:')
 tempo = tk.Entry(janela, width=30)
 tempo.pack(pady=0)
 
