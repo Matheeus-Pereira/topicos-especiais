@@ -5,9 +5,10 @@
 # minúsculas iguais.
 
 frase="A aranha arranha a rã. A rã arranha a aranha. Nem a aranha arranha a rã. Nem a rã arranha a aranha"
+
 print(frase)
 
-print(len(frase))
+print(len(frase), "letras")
 
 palavras = frase.split()
 dicionario ={}
@@ -20,4 +21,4 @@ for letra in palavras:
 #separa
 repete = {letra:dicionario[letra] for letra in dicionario if dicionario[letra]>1}
 
-print(repete)
+print("letras repetidas", repete)
