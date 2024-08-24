@@ -6,7 +6,7 @@ janela = tk.Tk()
 janela.title("Convertendo para minúsculas")
 janela.geometry("400x300")
 
-# Função para exibir um rótulo de texto
+
 def escrever(x: str):
     label = tk.Label(janela, text=x)
     label.pack(pady=(15, 0))
