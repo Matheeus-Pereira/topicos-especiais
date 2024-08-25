@@ -24,7 +24,6 @@ notas = {
 'E': [],
 'F': []
 }
-print(estudantes.values())
 
 for estudante in estudantes:
    if 90<=estudantes[estudante]<100:
