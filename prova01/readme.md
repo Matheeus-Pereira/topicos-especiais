@@ -37,7 +37,7 @@ total.
 2000), 'médio' (2001 - 5000) e 'alto' (> 5000). Armazene os resultados em um dicionário e
 exiba-o.
 11. Dada a frase frase = "Ana gosta de estudar e aprender novas coisas" , conte
-quantas palavras começam com uma vogal. Exiba o tota
+quantas palavras começam com uma vogal. Exiba o total
 12. Dado o dicionário de estudantes e suas notas, classifique cada estudante em uma das
 categorias de A a F, conforme a tabela abaixo:
 A: 90-100
