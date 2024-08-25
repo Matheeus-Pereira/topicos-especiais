@@ -1,10 +1,11 @@
 frase = "Ana gosta de estudar e aprender novas coisas"
-
+frase=frase.split()
 vogal="aeiouAEIOU"
 resultado=[]
 for letra in frase:
- if letra in vogal:
-  resultado.append(letra)
+  for v in vogal:
+   if letra.startswith(v)and len(letra)>1:
+       resultado.append(letra)
 #separa
 
-print("vogais: encontradas:",resultado, "\ntotal de de vogais:" ,len(resultado))
+print("palavras começadas com vogais::",resultado)
