@@ -1,7 +1,7 @@
-import pywhatkit as kit
 import webbrowser
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.chrome.service import Service
 
 import time
 
@@ -16,7 +16,10 @@ def abrirZap():
     caminho = "https://web.whatsapp.com/"
     webbrowser.open(caminho);
     
-driver = webdriver.Chrome(executable_path='.\\chrome.exe')
+serv = Service(executable_path='.\\chromedriver-win64\\chromedriver.exe');
+driver = webdriver.Chrome(service=serv)
+
+
 def enviar_mensagem(contato, mensagem):
       # Busca o campo de pesquisa de contato
     search_box = driver.find_element("xpath", '//div[@contenteditable="true"][@data-tab="3"]')
@@ -45,3 +48,5 @@ for linha in linhas:
     if linha:  # Verifica se a linha não está vazia
         enviar_mensagem(contato_whatsapp, linha)
         print(f"Mensagem enviada: {linha}")
+
+driver.quit()
