@@ -14,7 +14,7 @@ def enviar_mensagem(contato, mensagem):
     time.sleep(20)  # Aguarda para evitar o bloqueio por múltiplas mensagens
 
 # Caminho para o arquivo de texto
-caminho_arquivo = "D:\Users\Acer\Desktop\facul\python\topicos-especiais\avaliacao-02\teste.txt"
+caminho_arquivo = ".\\teste.txt"
 # Número do contato em formato internacional (Ex: +5511999999999 para Brasil)
 contato_whatsapp = "5548920005078"
 
